@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <button class="Refresh" onclick="location.reload()" ><i class="fa-solid fa-arrows-spin"></i></button>
+    <div class="container">
+        <div class="tile" onclick="MoveMe(0)">1</div>
+        <div class="tile" onclick="MoveMe(1)">2</div>
+        <div class="tile" onclick="MoveMe(2)">3</div>
+        <div class="tile" onclick="MoveMe(3)">4</div>
+        <div class="tile" onclick="MoveMe(4)">5</div>
+        <div class="tile" onclick="MoveMe(5)">6</div>
+        <div class="tile" onclick="MoveMe(6)">7</div>
+        <div class="tile" onclick="MoveMe(7)">8</div>
+        <div class="emtile"></div>
+    </div>
+
+    <div class="blscreen">
+        <div class="winScreen">
+            <img
+                src="https://img.freepik.com/free-vector/trophy-award-laurel-wreath-composition-with-realistic-image-golden-cup-decorated-with-garland-with-reflection_1284-32301.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1704844800&semt=ais">
+            <div class="WinMessage">
+                <h2>You Won The Match</h2>
+                <div class="StarGroup"></div>
+                Moves: <i class="MovesCount"></i>
+                <div class="buttonGroup"><button  onclick="location.reload()">Play Again!</button></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
